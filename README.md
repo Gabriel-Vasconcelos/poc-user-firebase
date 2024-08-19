@@ -1,6 +1,6 @@
 # POC - Firebase
 
-Este repositório contém uma prova de conceito (POC) utilizando o Firebase como solução para o backend de uma aplicação Next.js. O projeto foi desenvolvido como parte do curso de **Projeto Integrado 2** do **Curso de Sistemas e Mídias Digitais** da **Universidade Federal do Ceará (UFC)**.
+Este repositório contém uma prova de conceito (POC) utilizando o Firebase como solução para o backend de uma aplicação Next.js. O projeto foi desenvolvido como parte da cadeira de **Projeto Integrado 2** do **Curso de Sistemas e Mídias Digitais** da **Universidade Federal do Ceará (UFC)**.
 
 ## Objetivo
 
