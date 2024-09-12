@@ -29,6 +29,7 @@ const Header = () => {
       });
     }
     setIsDialogOpen(false); // Fecha o modal após a ação
+    setTimeout(() => location.reload(), 2000);
   };
 
   return (
