@@ -14,10 +14,12 @@ const SignUpForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setError(null);
+    setSuccess(null);
 
     try {
       // Cria o usuário no Firebase Authentication
@@ -33,7 +35,10 @@ const SignUpForm = () => {
       });
 
       console.log('Usuário cadastrado com sucesso:', user);
+      setError(null);
+      setSuccess("Usuário cadastrado com sucesso");
     } catch (error) {
+      setSuccess(null);
       setError(`Erro ao cadastrar usuário`);
       console.error('Erro ao cadastrar usuário:', error);
     }
@@ -84,6 +89,7 @@ const SignUpForm = () => {
       </div>
 
       {error && <div className="text-red-500 text-sm">{error}</div>}
+      {success && <div className="text-green-500 text-sm">{success}</div>}
 
       <Button
         type="submit"
